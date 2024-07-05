@@ -5,3 +5,11 @@
 .f {
     @apply flex justify-center items-center;
 }
+
+.fd {
+    @apply flex flex-col justify-center items-center;
+}
+
+.rf {
+    @apply rounded-full;
+}
