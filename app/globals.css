@@ -2,14 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.f {
-    @apply flex justify-center items-center;
+@layer base {
+  a {
+    @apply text-orange-500;
+  }
 }
 
-.fd {
-    @apply flex flex-col justify-center items-center;
+@layer utilities {
+  .text-bigger-hello {
+    @apply text-3xl font-semibold;
+  }
 }
 
-.rf {
-    @apply rounded-full;
+@layer components {
+  .primary-btn {
+    @apply w-full bg-orange-500 text-white  font-medium  rounded-md text-center hover:bg-orange-400 transition-colors;
+  }
 }
